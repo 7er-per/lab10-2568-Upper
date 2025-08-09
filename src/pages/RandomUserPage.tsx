@@ -3,7 +3,7 @@ import { cleanUser } from "../libs/CleanUser";
 import axios from "axios";
 import { useEffect, useState } from "react";
 export default function RandomUserPage() {
-  const [users, setUsers] = useState("");
+  const [users, setUsers] = useState<any>("");
   const [isLoading, setIsLoading] = useState(false);
   const [genAmount, setGenAmount] = useState(1);
 
